@@ -7,7 +7,7 @@ public class CodeUtil {
         Random random = new Random();
         StringBuffer s = new StringBuffer();
         for (int i = 0; i < length; i++) {
-            int number = random.nextInt(62);
+            int number = random.nextInt(102);
             s.append(str.charAt(number));
         }
         return s.toString();
