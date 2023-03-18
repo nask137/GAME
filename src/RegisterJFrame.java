@@ -1,20 +1,20 @@
+import cn.hutool.core.io.FileUtil;
+
 import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
-
-
 public class RegisterJFrame extends JFrame implements MouseListener {
     //注册相关代码写在这里
-    public static   ArrayList<User> allUsers = new ArrayList<>();
-    User base= new User("王楠","wn204420");
+ ArrayList<User> allusers;
     JButton register = new JButton();
     JTextField username = new JTextField();
     //JTextField password = new JTextField();
     JPasswordField password = new JPasswordField();
     JPasswordField password2 = new JPasswordField();
 
-    public  RegisterJFrame(){
+    public  RegisterJFrame(ArrayList<User> allusers){
+        this.allusers=allusers;
         this.setSize(488,430);
         //设直界面的标题
         this.setTitle("拼图 注册");
@@ -67,9 +67,6 @@ public class RegisterJFrame extends JFrame implements MouseListener {
         this.getContentPane().add(jLabel);
         //刷新一下界面
         this.getContentPane().repaint();
-        showJDialog("密码必须由数字和字母构成");
-        allUsers.add(base);
-
     }
 
     @Override
@@ -81,18 +78,15 @@ public class RegisterJFrame extends JFrame implements MouseListener {
             String passwordInput = password.getText();
             String passwordInput2 = password2.getText();
             User u = new User();
-            if (chazhao(allUsers, usernameInput) == -1) {
-                if (usernameInput == null) showJDialog("用户名不能为空！");
+            if (chazhao(allusers, usernameInput) == -1) {
+                if (usernameInput.equals("")) showJDialog("用户名不能为空！");
                 else {
                     u.setUsername(usernameInput);
-                    if (checkp(passwordInput2)) {
+                    if (checkp(passwordInput)) {
                         if (passwordInput.equals(passwordInput2)) {
                             u.setPassword(passwordInput);
-                            allUsers.add(u);
-                            for (User allUser : allUsers) {
-                                System.out.println(allUser.getUsername());
-                                System.out.println(allUser.getPassword());
-                            }
+                           allusers.add(u);
+                            FileUtil.writeLines(allusers,"userInfo.txt","UTF-8");
                             showJDialog("注册成功！");
                             //关闭当前注册界面
                             this.setVisible(false);
@@ -111,10 +105,6 @@ public class RegisterJFrame extends JFrame implements MouseListener {
                 }
             }
 }
-
-
-
-
     @Override
     public void mousePressed(MouseEvent e) {
         if (e.getSource() == register) {
@@ -175,7 +165,7 @@ public class RegisterJFrame extends JFrame implements MouseListener {
                     if (n>='0'&&n<='9')count2++;
                 }
                 if (count1+count2<pass.length()||count1==0||count2==0) {
-                    showJDialog("密码格式错误,请重新输入");
+                    showJDialog("密码必须由字母和数字组成！");
                     return false;
                 }else
                     return true;

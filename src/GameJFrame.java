@@ -1,7 +1,5 @@
-import com.sun.org.apache.xpath.internal.objects.XObject;
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -34,7 +32,7 @@ public class GameJFrame extends JFrame implements KeyListener , ActionListener {
     //定义路径
     String[][] path ={
             {"image\\animal\\animal1\\","image\\animal\\animal2\\","image\\animal\\animal3\\","image/animal/animal4/","image/animal/animal5/","image/animal/animal6/","image/animal/animal7/","image/animal/animal8/"},//animal  8
-            {"image/girl/girl1/","image/girl/girl2/","image/girl/girl3/","image/girl/girl4/","D:\\IDEA-workspace\\GAME\\image\\girl\\girl5\\","image/girl/girl6/","image/girl/girl7/","image/girl/girl8/","image/girl/girl9/","image/girl/girl10/","image/girl/girl11/"},//girl   11
+            {"image/girl/girl1/","image/girl/girl2/","image/girl/girl3/","image/girl/girl4/","image\\girl\\girl5\\","image/girl/girl6/","image/girl/girl7/","image/girl/girl8/","image/girl/girl9/","image/girl/girl10/","image/girl/girl11/"},//girl   11
             {"image/sport/sport1/","image/sport/sport2/","image/sport/sport3/","image/sport/sport4/","image/sport/sport5/","image/sport/sport6/","image/sport/sport7/","image/sport/sport8/","image/sport/sport9/","image/sport/sport10/"}//sport   10
 
     };

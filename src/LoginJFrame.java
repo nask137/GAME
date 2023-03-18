@@ -1,7 +1,12 @@
+import cn.hutool.core.io.FileUtil;
 import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.util.ArrayList;
+import java.util.List;
+
 public class LoginJFrame extends JFrame implements MouseListener {
+     ArrayList<User> allUsers = new ArrayList<>();
     JButton login = new JButton();
     JButton register = new JButton();
     JTextField username = new JTextField();
@@ -13,6 +18,8 @@ public class LoginJFrame extends JFrame implements MouseListener {
 
 
     public LoginJFrame() {
+        //读取文件中的用户信息
+        readUserInfo();
         //初始化界面
         initJFrame();
         //在这个界面中添加内容
@@ -20,6 +27,19 @@ public class LoginJFrame extends JFrame implements MouseListener {
         //让当前界面显示出来
         this.setVisible(true);
     }
+
+    private void readUserInfo() {
+        //读取文件中的用户信息
+        List<String> userInfostrlist = FileUtil.readUtf8Lines("userInfo.txt");
+        for (String s : userInfostrlist) {
+            String[] userInfoArr = s.split("&");
+            String []arr1= userInfoArr[0].split("=");
+            String  []arr2= userInfoArr[1].split("=");
+            User u=new User(arr1[1],arr2[1]);
+            allUsers.add(u);
+        }
+    }
+
     public void initView() {
         //1. 添加用户名文字
         JLabel usernameText = new JLabel(new ImageIcon("image\\login\\用户名.png"));
@@ -87,7 +107,6 @@ public class LoginJFrame extends JFrame implements MouseListener {
      @Override
      public void mouseClicked(MouseEvent e) {
         if (e.getSource() == login) {
-            System.out.println("点击了登录按钮");
             //获取两个文本输入框中的内容
             String usernameInput = username.getText();
             String passwordInput = password.getText();
@@ -95,35 +114,28 @@ public class LoginJFrame extends JFrame implements MouseListener {
             String codeInput = code.getText();
             //创建一个User对象
              User userInfo = new User(usernameInput, passwordInput);
-             System.out.println("用户输入的用户名为" + usernameInput);
-             System.out.println("用户输入的密码为" + passwordInput);
+
              if (codeInput.length() == 0) {
                  showJDialog("验证码不能为空");
              } else if (usernameInput.length() == 0 || passwordInput.length() == 0) {
-                 //校验用户名和密码是否为空
-                 System.out.println("用户名或者密码为空");
                  //调用showJDialog方法并展示弹框
                   showJDialog("用户名或者密码为空");
              } else if (!codeInput.equalsIgnoreCase(rightCode.getText())) {
                  showJDialog("验证码输入错误");
              } else if (contains(userInfo)) {
-                 System.out.println("用户名和密码正确可以开始玩游戏了");
                  //关闭当前登录界面
                  this.setVisible(false);
                  //打开游戏的主界面
                   new GameJFrame();
              } else {
-                 System.out.println("用户名或密码错误");
                  showJDialog("用户名或密码错误");
              }
         } else if (e.getSource() == register) {
-            System.out.println("点击了注册按钮");
             //关闭当前登录界面
             this.setVisible(false);
             //打开注册界面
-            new RegisterJFrame();
+            new RegisterJFrame(allUsers);
         } else if (e.getSource() == rightCode) {
-            System.out.println("更换验证码");
             //获取一个新的验证码
             String code = CodeUtil.getCode(5);
             rightCode.setText(code);
@@ -173,8 +185,8 @@ public class LoginJFrame extends JFrame implements MouseListener {
     public void mouseExited(MouseEvent e) {    }
     //判断用户在集合中是否存在
     public boolean contains(User userInput){
-        for (int i=0;i<RegisterJFrame.allUsers.size();i++) {
-            if (userInput.getUsername().equals(RegisterJFrame.allUsers.get(i).getUsername()) && userInput.getPassword().equals(RegisterJFrame.allUsers.get(i).getPassword())) {
+        for (User allUser : allUsers) {
+            if (userInput.getUsername().equals(allUser.getUsername()) && userInput.getPassword().equals(allUser.getPassword())) {
                 //有相同的代表存在，返回true，后面的不需要再比了
                 return true;
             }
