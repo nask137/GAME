@@ -133,7 +133,7 @@ public class GameJFrame extends JFrame implements KeyListener , ActionListener {
         //设置界面的宽高
         this.setSize(605, 680);
         //设直界面的标题
-        this.setTitle("拼图单机版 v1.0");
+        this.setTitle("拼图单机版 v1.1");
         //设置界面置顶
         this.setAlwaysOnTop(true);
         //设置界面剧中

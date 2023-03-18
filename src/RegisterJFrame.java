@@ -17,7 +17,7 @@ public class RegisterJFrame extends JFrame implements MouseListener {
         this.allusers=allusers;
         this.setSize(488,430);
         //设直界面的标题
-        this.setTitle("拼图 注册");
+        this.setTitle("拼图 V1.1 注册");
         //设置界面置顶
         this.setAlwaysOnTop(true);
         //设置界面剧中

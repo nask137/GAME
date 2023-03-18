@@ -97,7 +97,7 @@ public class LoginJFrame extends JFrame implements MouseListener {
     }
     public void initJFrame() {
         this.setSize(488, 430);//设置宽高
-        this.setTitle("拼图游戏 V1.0登录");//设置标题
+        this.setTitle("拼图游戏 V1.1登录");//设置标题
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//设置关闭模式
         this.setLocationRelativeTo(null);//居中
         this.setAlwaysOnTop(true);//置顶
