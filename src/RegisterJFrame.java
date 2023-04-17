@@ -9,7 +9,6 @@ public class RegisterJFrame extends JFrame implements MouseListener {
  ArrayList<User> allusers;
     JButton register = new JButton();
     JTextField username = new JTextField();
-    //JTextField password = new JTextField();
     JPasswordField password = new JPasswordField();
     JPasswordField password2 = new JPasswordField();
 

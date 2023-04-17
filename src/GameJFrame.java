@@ -24,8 +24,8 @@ public class GameJFrame extends JFrame implements KeyListener , ActionListener {
     //定义一个变量统计部署
     int count=0;
     //定义m n 来记录当前路径
-    int m=r.nextInt(3);
-    int n=r.nextInt(8);
+    int m=1;//r.nextInt(3);
+    int n=6;//r.nextInt(8);
     //用X Y 记录空白方块在数组中的位置
     int x=0;
     int y=0;
