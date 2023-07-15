@@ -80,6 +80,7 @@ public class LoginJFrame extends JFrame implements MouseListener {
          login.setContentAreaFilled(false);
          //给登录按钮绑定鼠标事件
          login.addMouseListener(this);
+         //
          this.getContentPane().add(login);
          //6.添加注册按钮
          register.setBounds(256, 310, 128, 47);
@@ -89,7 +90,9 @@ public class LoginJFrame extends JFrame implements MouseListener {
          //去除按钮的背景
          register.setContentAreaFilled(false);
          //给注册按钮绑定鼠标事件
-         register.addMouseListener(this);        this.getContentPane().add(register);
+         register.addMouseListener(this);
+         //
+         this.getContentPane().add(register);
          //7.添加背景图片
          JLabel background = new JLabel(new ImageIcon("image\\login\\background.png"));
          background.setBounds(0, 0, 470, 390);

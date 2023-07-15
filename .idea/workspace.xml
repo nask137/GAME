@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="GAME:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="241abac0-890e-4acd-942b-05fd3ec09139" name="变更" comment="拼图游戏v1.1">
+      <change beforePath="$PROJECT_DIR$/out/production/GAME/userInfo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginJFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegisterJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegisterJFrame.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="d7aef456-abcc-4a3a-9477-1b7d53e19088" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IXR3tArCjRrREUqo9S12kSjnoP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindow运行.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/IDEA-workspace/GAME/lib/hutool-all-5.8.10.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "全局库",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA-workspace\GAME\lib" />
+      <recent name="D:\IDEA-workspace\GAME" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="GAME" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="241abac0-890e-4acd-942b-05fd3ec09139" name="变更" comment="" />
+      <created>1670325748992</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670325748992</updated>
+      <workItem from="1670325750249" duration="917000" />
+      <workItem from="1670374793680" duration="3399000" />
+      <workItem from="1670380754929" duration="2783000" />
+      <workItem from="1670400102688" duration="3644000" />
+      <workItem from="1670409129878" duration="909000" />
+      <workItem from="1670410059324" duration="4358000" />
+      <workItem from="1670415327587" duration="8666000" />
+      <workItem from="1670425789467" duration="1174000" />
+      <workItem from="1670482163721" duration="17825000" />
+      <workItem from="1670506047358" duration="8049000" />
+      <workItem from="1670551996463" duration="4575000" />
+      <workItem from="1670556912263" duration="3941000" />
+      <workItem from="1670569803467" duration="10027000" />
+      <workItem from="1670641287490" duration="54000" />
+      <workItem from="1670836337470" duration="95000" />
+      <workItem from="1671077301777" duration="5480000" />
+      <workItem from="1671329985626" duration="917000" />
+      <workItem from="1671503070854" duration="139000" />
+      <workItem from="1671794207071" duration="518000" />
+      <workItem from="1672390716418" duration="162000" />
+      <workItem from="1672628712033" duration="177000" />
+      <workItem from="1676547572274" duration="27000" />
+      <workItem from="1676551912150" duration="36000" />
+      <workItem from="1676552116428" duration="13000" />
+      <workItem from="1676552911523" duration="6000" />
+      <workItem from="1676552926117" duration="32000" />
+      <workItem from="1676806970567" duration="726000" />
+      <workItem from="1677225199789" duration="180000" />
+      <workItem from="1677411387612" duration="194000" />
+      <workItem from="1677497035249" duration="196000" />
+      <workItem from="1677564516636" duration="427000" />
+      <workItem from="1677566232374" duration="1857000" />
+      <workItem from="1677569226487" duration="17000" />
+      <workItem from="1677591961555" duration="696000" />
+      <workItem from="1677760443221" duration="89000" />
+      <workItem from="1679136029902" duration="6323000" />
+      <workItem from="1679143725991" duration="5000" />
+      <workItem from="1679143742337" duration="246000" />
+      <workItem from="1679834720193" duration="504000" />
+      <workItem from="1679876740774" duration="29000" />
+      <workItem from="1679878110473" duration="197000" />
+      <workItem from="1679878435661" duration="8000" />
+      <workItem from="1681694228746" duration="2194000" />
+      <workItem from="1681726793626" duration="6000" />
+      <workItem from="1682043763884" duration="4462000" />
+      <workItem from="1682064058261" duration="1708000" />
+      <workItem from="1682083977545" duration="21000" />
+      <workItem from="1683882937307" duration="552000" />
+      <workItem from="1684590231611" duration="725000" />
+      <workItem from="1684653940828" duration="10000" />
+      <workItem from="1685165033100" duration="570000" />
+      <workItem from="1685165639392" duration="629000" />
+      <workItem from="1685611956418" duration="673000" />
+      <workItem from="1685700507604" duration="114000" />
+      <workItem from="1687609007197" duration="647000" />
+      <workItem from="1687609669799" duration="1066000" />
+      <workItem from="1688122366560" duration="309000" />
+      <workItem from="1689416890640" duration="1968000" />
+    </task>
+    <task id="LOCAL-00001" summary="拼图游戏v1.0">
+      <created>1670576170981</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670576170981</updated>
+    </task>
+    <task id="LOCAL-00002" summary="拼图游戏v1.0">
+      <created>1670577273516</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670577273516</updated>
+    </task>
+    <task id="LOCAL-00003" summary="拼图游戏v1.1">
+      <created>1679142554540</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679142554540</updated>
+    </task>
+    <task id="LOCAL-00004" summary="拼图游戏v1.1">
+      <created>1679142929967</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679142929967</updated>
+    </task>
+    <task id="LOCAL-00005" summary="拼图游戏v1.1">
+      <created>1681696369486</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681696369486</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="拼图游戏v1.0" />
+    <MESSAGE value="拼图游戏v1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="拼图游戏v1.1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/GameJFrame.java</url>
+          <line>214</line>
+          <properties class="GameJFrame" method="keyReleased">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/LoginJFrame.java</url>
+          <line>189</line>
+          <properties class="LoginJFrame" method="contains">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/RegisterJFrame.java</url>
+          <line>156</line>
+          <properties class="RegisterJFrame" method="checkp">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/App.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RegisterJFrame.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
